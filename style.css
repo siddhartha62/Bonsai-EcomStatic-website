@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    width: 100%;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 80px;
+    background: radial-gradient(rgb(153, 230, 191),  #76de76);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 30px;
+    
+}
+
+#navbar{
+ display: flex;
+ justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(246, 237, 237);
+    transition: 0.5s;
+}
+#navbar li a.active,
+#navbar li a:hover{
+    color: rgb(47, 69, 52);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(243, 249, 244);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#char{
+    background: radial-gradient(    #fff,  #40bb40);
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   padding: 30px 80px;
+   line-height: -20cm;
+}
+#char h2{
+    color: rgb(36, 64, 44);
+   font-size: 60px;
+}
+#char p {
+    font-size: 20px;
+}
+#char button{
+    position: relative;
+    background-color: rgb(36, 64, 44);
+    border-radius: 4em;
+    font-size: 16px;
+    color: rgb(118, 232, 118);
+    padding: 0.8em 1.8em;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+#char button:hover{
+    transition-duration: 0.1s;
+  background-color: #011e09;
+}
+#char button::after{
+    content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+#char button:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+}
+#char button:active {
+    top: 1px;
+  }
+#product{
+    text-align: center;
+}
+#product .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 4px #000000;
+    border-radius: 25%;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(178, 205, 163);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+#product .pro:hover{
+    box-shadow: 20px 20px 30px rgb(77, 219, 77);
+}
+#product .pro img{
+    width: 60%;
+    border-radius: 20px;
+}
+#product .pro .des{
+  
+    padding: 10px 0;
+}
+#product .pro .des span{
+    color: #000000ae;
+    font-size: 12px;
+} 
+#product .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+.photo img{
+    border-radius: 50%;
+    width: 90% ;
+    margin-left: 100px;
+    margin-top: 110px;
+    margin-right: 200px;
+}
+
+#char {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+.saar{
+   padding-top: 30px;
+   margin-top: 100px;
+   line-height: 13mm;
+}
+#product h2{
+font-size: 56px;
+color: #024615;
+font-family:'Roboto Slab', serif;
+}
+#product p{
+    font-size: 20px;
+    color: #40bb40;
+}
+.banner-box h4{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 300;
+}
+.banner-box h2{
+    font-size: 58px;
+    color: #fff;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 125px;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("dba96657cedb481148200023a1d03b42.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+   
+}
+#sm-banner .banner-box2{
+   background-image: url("plzwork2.jpg");
+}
+.banner-box button{
+font-size: 14px;
+font-weight: 600;
+padding: 15px 30px;
+color: black;
+background-color: #fff;
+border-radius: 20%;
+cursor: pointer;
+border: none;
+outline: none;
+transition: 0.2s;
+}
+.banner-box .white{
+    font-size: 13px;
+ font-weight: 600;
+ padding: 11px 18px;
+ color: #fff;
+ background-color: transparent;
+ cursor: pointer;
+ border: 1px solid#fff;
+ outline: none;
+ transition: 0.2s;
+}
+#sm-banner .banner-box{
+    background-color: #011e09;
+    border: 1px solid#022e09;
+}
+.col{
+    padding: 30px;
+    margin: 10px;
+    line-height: 10mm;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.col h4{
+    font-size: 60px;
+    font-weight: 600;
+}
+.follow{
+    padding: 60px 20px;
+    margin: 40px 20px;
+    line-height: 10mm;
+    color: rgb(255, 255, 255);
+
+    
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: black;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.copyright{
+    align-items:center;
+    padding: 10px;
+}
+.time{
+    font-size: 20px;
+    color: #022e09;
+}
+
+
+
+
+
+
+
